@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -23,4 +27,64 @@ a {
     color: white;
     background: black;
   }
+}
+
+/* golobal hover button */
+
+.commonBtn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: #e9281a;
+  border: 3px solid #f50d0d;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+.commonBtnCss::after,
+.commonBtnCss::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  transition: 0.5s;
+}
+
+.commonBtnCss::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.commonBtnCss::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.commonBtnCss:hover::after,
+.commonBtnCss:hover::before {
+  width: 30px;
+  height: 30px;
+  border-color: #e72f2f;
+}
+
+.commonbtn-hover {
+  @apply hover:bg-red-500 hover:border-red-500;
+}
+.carousel-item {
+  background-image: url(/image/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
