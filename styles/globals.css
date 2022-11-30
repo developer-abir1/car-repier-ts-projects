@@ -41,8 +41,7 @@ a {
   letter-spacing: 1px;
   text-decoration: none;
   color: white;
-  background: #e9281a;
-  border: 3px solid #f50d0d;
+  background: #041f79;
   cursor: pointer;
   transition: ease-out 0.5s;
   -webkit-transition: ease-out 0.5s;
@@ -76,7 +75,7 @@ a {
 .commonBtnCss:hover::before {
   width: 30px;
   height: 30px;
-  border-color: #e72f2f;
+  border-color: #e9281a;
 }
 
 .commonbtn-hover {
@@ -87,4 +86,13 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.itemIcon {
+  display: none;
+}
+.cartItems:hover .itemIcon {
+  display: block;
+}
+.cartItems {
+  cursor: pointer;
 }

@@ -17,7 +17,7 @@ const Layouts = ({ title, children }: any) => {
         <header>
           <div className="  bg-white ">
             <div className="navbar  h-20 container m-auto  ">
-              <div className="navbar-start">
+              <div className="navbar-start   ">
                 <img src="/image/logo-2.png" className=" z-10" alt="" />
               </div>
               <div className="navbar-center hidden lg:flex justify-center">
@@ -69,7 +69,7 @@ const Layouts = ({ title, children }: any) => {
               </div>
               <div className="navbar-end hidden lg:flex mr-4">
                 {' '}
-                <button className="   commonBtn commonBtnCss commonbtn-hover">
+                <button className="   commonBtn commonBtnCss commonbtn-hover uppercase">
                   Get Booking{' '}
                 </button>
               </div>
