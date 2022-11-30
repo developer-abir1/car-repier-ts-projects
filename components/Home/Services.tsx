@@ -31,17 +31,11 @@ const Services = () => {
 
       <div className="px-4">
         <Swiper
-          spaceBetween={50}
           breakpoints={{
             // when window width is >= 640px
             640: {
               width: 640,
-              slidesPerView: 3,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
           }}
           onSlideChange={() => console.log('slide change')}
