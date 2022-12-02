@@ -29,7 +29,7 @@ const Services = () => {
             
    */}
 
-      <div className="px-4">
+      <div className="px-4 my-5">
         <Swiper
           breakpoints={{
             // when window width is >= 640px

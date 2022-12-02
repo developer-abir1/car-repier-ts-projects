@@ -7,6 +7,7 @@ import {
   faShoppingBag,
   faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
 const Layouts = ({ title, children }: any) => {
   return (
     <>
@@ -23,36 +24,44 @@ const Layouts = ({ title, children }: any) => {
               <div className="navbar-center hidden lg:flex justify-center">
                 <ul className=" flex p-0 ">
                   <li className="mr-4">
-                    <a className=" text-xl font-bold hover:text-red-400  cursor-pointer">
+                    <a className=" text-lg font-bold hover:text-red-400  cursor-pointer">
                       Home +
                     </a>
                   </li>
                   <li className="mr-4">
-                    <a className=" text-xl font-bold  hover:text-red-400  cursor-pointer">
+                    <a className=" text-lg font-bold  hover:text-red-400  cursor-pointer">
                       Services +
                     </a>
                   </li>
                   <li className="mr-4">
-                    <a className=" text-xl font-bold  hover:text-red-400  cursor-pointer">
+                    <a className=" text-lg font-bold  hover:text-red-400  cursor-pointer">
                       Blogs +
                     </a>
                   </li>
                   <li className="mr-4">
-                    <a className=" text-xl font-bold  hover:text-red-400  cursor-pointer">
+                    <a className=" text-lg font-bold  hover:text-red-400  cursor-pointer">
                       Pages +
                     </a>
                   </li>
                   <li className="mr-4">
-                    <a className=" text-xl font-bold  hover:text-red-400  cursor-pointer">
+                    <a className=" text-lg font-bold  hover:text-red-400  cursor-pointer">
                       Contact us +
                     </a>
+                  </li>
+                  <li className="mr-4">
+                    <Link
+                      href={'/dashboard'}
+                      className=" text-lg font-bold  hover:text-red-400  cursor-pointer"
+                    >
+                      Dashboard +
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="  navbar-end     lg:flex   ">
                 <FontAwesomeIcon
                   icon={faSearch}
-                  className="text-xl hover:text-red-500 cursor-pointer"
+                  className="text-lg hover:text-red-500 cursor-pointer"
                 />
                 <div className="divider  rotate-90  w-12  "></div>
                 <div className="  ">
@@ -67,7 +76,7 @@ const Layouts = ({ title, children }: any) => {
                   </div>
                 </div>
               </div>
-              <div className="navbar-end hidden lg:flex mr-4">
+              <div className="navbar-end hidden lg:flex ml-6">
                 {' '}
                 <button className="   commonBtn commonBtnCss commonbtn-hover uppercase">
                   Get Booking{' '}

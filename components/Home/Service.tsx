@@ -73,7 +73,7 @@ const Service = () => {
             className="mask mask-star-2 bg-red-500"
           />
         </div>
-        <h2 className="text-center text-3xl mt-3">$804</h2>
+        <h2 className="text-center text-xl mt-3">$804</h2>
         <div className="flex    justify-center ">
           <button className=" btn commonBtn commonBtnCss commonbtn-hover    ">
             <FontAwesomeIcon
